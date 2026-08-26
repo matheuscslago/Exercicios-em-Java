@@ -1,4 +1,4 @@
-package com.github.matheuscslago.IaExercises;
+package com.github.matheuscslago.Exercises.Fixacao;
 
 public class AnalisarNotas {
     public static double calcularNotaAprovados(double notaCorte, double... notas) {

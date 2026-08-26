@@ -1,4 +1,4 @@
-package com.github.matheuscslago.IaExercises;
+package com.github.matheuscslago.Exercises.Fixacao;
 
 public class ForEach {
     public static double calcularTotalEstoque(double[] precos) {

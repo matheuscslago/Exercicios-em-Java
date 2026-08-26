@@ -1,6 +1,6 @@
-package com.github.matheuscslago.IaExercises.Revisao;
+package com.github.matheuscslago.Exercises.Revisao;
 
-public class RevisaoPOO {
+public class RevisaoPOO1 {
     static void main(String[] args) {
         // Testando a execução
         Game game1 = new Game("Need for Speed", 200.0, "Corrida");
