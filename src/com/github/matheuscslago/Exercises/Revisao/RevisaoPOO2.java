@@ -2,8 +2,8 @@ package com.github.matheuscslago.Exercises.Revisao;
 
 public class RevisaoPOO2 {
     static void main(String[] args) {
-        Item item1 = new Item("Lacerating Sword", "Legenday", 85);
-        Item item2 = new Item("Wood Axe",50);
+        Item item1 = new Item("Lacerating Sword", "Legendary", 85);
+        Item item2 = new Item("Wood Axe", 50);
         Hero hero1 = new Hero("Mike Wheeler", item1);
         Hero hero2 = new Hero("Dustin Henderson", item2);
 
@@ -12,15 +12,16 @@ public class RevisaoPOO2 {
         System.out.println("\n--------Change Weapon--------");
         hero1.switchWeapon(item2);
         hero1.attack();
+        System.out.println("\n=============================\n");
 
         Guild guild = new Guild("Stranger Things");
         guild.recruit(hero1);
         guild.recruit(hero2);
-        System.out.println("\n\n======Show Guild======");
+        System.out.println("\n======Show Guild======");
         guild.viewGuild();
 
-        System.out.println("\n\n======View Total Items======");
-        item1.getTotalItems();
+        System.out.println("\n======View Total Items======");
+        System.out.println("Total items created: " + Item.getTotalItems());
     }
 }
 
@@ -41,8 +42,9 @@ class Item {
         this(name, "Common", baseDamage);
     }
 
-    public void getDescription() {
-        System.out.print("<" + this.name + "> [" + this.rarity + "] | Damage: <" + this.baseDamage + ">");
+    public String getDescription() {
+        String description = "<" + this.name + "> [" + this.rarity + "] | Damage: <" + this.baseDamage + ">";
+        return description;
     }
 
     public static int getTotalItems() {
@@ -64,13 +66,15 @@ class Hero {
     }
 
     public void attack() {
-        System.out.print("<" + this.nickname + "> attacked using: ");
-        weapon.getDescription();
+        System.out.print("<" + this.nickname + "> attacked using: " + weapon.getDescription());
     }
 
-    public void description(){
-        System.out.print(this.nickname + " | Weapon equipped: ");
-        this.weapon.getDescription();
+    public void description() {
+        System.out.print(this.nickname + " | Weapon equipped: " + this.weapon.getDescription() + "\n");
+    }
+
+    public String getNickname() {
+        return nickname;
     }
 }
 
@@ -86,6 +90,7 @@ class Guild {
     public void recruit(Hero hero) {
         if (numberMembers < members.length) {
             members[numberMembers] = hero;
+            System.out.println(hero.getNickname() + " joined the guild: " + this.name);
             numberMembers++;
         } else {
             System.out.println("[System Error]: The guild is already full!");
@@ -93,13 +98,16 @@ class Guild {
     }
 
     public void viewGuild() {
+        int i = 0;
         System.out.println("Guild Name: " + this.name);
-        for (int i = 0; i < members.length; i++) {
-            if (members[i] != null) {
-                System.out.print("Member[" + (i+1) + "]: ");
-                members[i].description();
+        for(Hero member: members){
+            if(member != null){
+                System.out.print("Member[" + (i + 1) + "]: ");
+                member.description();
+                i++;
             }
         }
+
         System.out.println("====================");
     }
 
