@@ -10,7 +10,7 @@ public class Funcionario {
     }
 
     public double bonus(){
-        return this.baseSalary * (10/100);
+        return this.baseSalary * 0.10;
     }
 
     public void showSummary(){

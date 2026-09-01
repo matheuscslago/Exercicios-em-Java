@@ -8,6 +8,7 @@ public class Gerente extends Funcionario{
         this. leadershipBonus = leadershipBonus;
     }
 
+    @Override
     public double bonus(){
         return super.bonus() + this.leadershipBonus;
     }
