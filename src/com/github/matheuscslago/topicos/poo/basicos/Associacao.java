@@ -1,4 +1,4 @@
-package com.github.matheuscslago.Exercises.Fixacao;
+package com.github.matheuscslago.topicos.poo.basicos;
 
 public class Associacao {
     static void main(String[] args) {

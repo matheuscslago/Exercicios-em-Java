@@ -1,4 +1,4 @@
-package com.github.matheuscslago.Exercises.Fixacao;
+package com.github.matheuscslago.topicos.sintaxe;
 
 public class ValidadorSenha {
     public static boolean temTamMinimo(String senha, int tamMinimo) {

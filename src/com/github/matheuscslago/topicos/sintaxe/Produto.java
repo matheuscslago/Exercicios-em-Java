@@ -1,4 +1,4 @@
-package com.github.matheuscslago.Exercises.Fixacao;
+package com.github.matheuscslago.topicos.sintaxe;
 
 class Impressora{
     public static void imprimirEtiquetaPreco(Produto produto){

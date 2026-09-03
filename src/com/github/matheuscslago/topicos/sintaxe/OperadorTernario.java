@@ -1,4 +1,4 @@
-package com.github.matheuscslago.Exercises.Fixacao;
+package com.github.matheuscslago.topicos.sintaxe;
 
 //restrição: use apenas operador ternário para praticar!
 

@@ -1,4 +1,4 @@
-package com.github.matheuscslago.Exercises.Fixacao;
+package com.github.matheuscslago.topicos.sintaxe;
 
 import java.util.Scanner;
 

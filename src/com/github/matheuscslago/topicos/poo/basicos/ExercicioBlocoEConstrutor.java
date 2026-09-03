@@ -1,4 +1,4 @@
-package com.github.matheuscslago.Exercises.Fixacao;
+package com.github.matheuscslago.topicos.poo.basicos;
 
 public class ExercicioBlocoEConstrutor {
     static void main(String[] args) {

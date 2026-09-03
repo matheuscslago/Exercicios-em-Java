@@ -1,4 +1,4 @@
-package com.github.matheuscslago.CodeWars;
+package com.github.matheuscslago.desafios.codewars;
 
 public class LoveVsFriendship {
     public static int wordsToMarks(String text) {

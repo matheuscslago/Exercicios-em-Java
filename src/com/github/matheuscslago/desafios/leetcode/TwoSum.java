@@ -1,4 +1,4 @@
-package com.github.matheuscslago.LeetCode;
+package com.github.matheuscslago.desafios.leetcode;
 
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {

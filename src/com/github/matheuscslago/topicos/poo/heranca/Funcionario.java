@@ -1,4 +1,4 @@
-package com.github.matheuscslago.Exercises.Revisao.Heranca;
+package com.github.matheuscslago.topicos.poo.heranca;
 
 public class Funcionario {
     protected String name;

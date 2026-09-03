@@ -1,4 +1,4 @@
-package com.github.matheuscslago.Exercises.Revisao.Geral;
+package com.github.matheuscslago.topicos.poo.basicos;
 
 public class RevisaoPOO1 {
     static void main(String[] args) {
