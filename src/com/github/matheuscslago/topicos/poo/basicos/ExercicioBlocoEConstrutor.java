@@ -3,16 +3,16 @@ package com.github.matheuscslago.topicos.poo.basicos;
 public class ExercicioBlocoEConstrutor {
     static void main(String[] args) {
         System.out.println("--- Criando Item 1 ---");
-        Item item1 = new Item("Teclado Mecânico", 250.0);
-        System.out.println("Item: " + item1.getNome() + " | Código: " + item1.getCodigo() + " | Preço: R$ " + item1.getPreco());
+        ItemConstrutor itemConstrutor1 = new ItemConstrutor("Teclado Mecânico", 250.0);
+        System.out.println("Item: " + itemConstrutor1.getNome() + " | Código: " + itemConstrutor1.getCodigo() + " | Preço: R$ " + itemConstrutor1.getPreco());
 
         System.out.println("\n--- Criando Item 2 ---");
-        Item item2 = new Item("Mousepad Simples"); // Deve chamar o construtor sobrecarregado
-        System.out.println("Item: " + item2.getNome() + " | Código: " + item2.getCodigo() + " | Preço: R$ " + item2.getPreco());
+        ItemConstrutor itemConstrutor2 = new ItemConstrutor("Mousepad Simples"); // Deve chamar o construtor sobrecarregado
+        System.out.println("Item: " + itemConstrutor2.getNome() + " | Código: " + itemConstrutor2.getCodigo() + " | Preço: R$ " + itemConstrutor2.getPreco());
     }
 }
 
-class Item{
+class ItemConstrutor {
     private String codigo;
     private String nome;
     private double preco;
@@ -21,14 +21,15 @@ class Item{
         System.out.println("[Sistema]: Gerando código altomático: "+codigo);
     }
 
-    public Item(String nome, double preco){
+    public ItemConstrutor(String nome, double preco){
         this.nome = nome;
         this.preco = preco;
     }
 
-    public Item(String nome){
+    public ItemConstrutor(String nome){
         this(nome, 0.0);
     }
+
 
     public String getCodigo() {
         return codigo;

@@ -11,7 +11,7 @@ public enum Zone {
     private final double baseRate;
     private final int timeframe;
 
-    Zone(double baseRate, int timeframe) {
+    private Zone(double baseRate, int timeframe) {
         this.baseRate = baseRate;
         this.timeframe = timeframe;
     }
@@ -27,6 +27,7 @@ public enum Zone {
     public double calculateTotalCost(double weight) {
         return baseRate + (weight * 2);
     }
+
 
 }
 

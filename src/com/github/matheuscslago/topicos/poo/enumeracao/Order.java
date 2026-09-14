@@ -14,9 +14,11 @@ public class Order {
     @Override
     public String toString() {
         return "Order{" +
-                "description='" + description + '\'' +
-                ", weight=" + weight +
-                ", destiny=" + destiny +
+                "description = '" + description + '\'' +
+                ", weight = " + weight +
+                ", term = " + this.destiny.getTimeframe() +
+                ", freight = " + this.destiny.calculateTotalCost(this.weight) +
+                " R$ , destiny = " + destiny +
                 '}';
     }
 }
