@@ -1,16 +1,17 @@
 package com.github.matheuscslago.topicos.poo.revisao;
 
 public class MagicEquipment {
-    protected final String id = "EQP-";
+    protected final String id;
     protected String name;
     protected double basePower;
     protected ItemRarity rarity;
     public static final double BASE_COST = 100.0;
 
-    public MagicEquipment(String name, double basePower, ItemRarity rarity) {
+    public MagicEquipment(String id, String name, double basePower, ItemRarity rarity) {
         this.name = name;
         this.basePower = basePower;
         this.rarity = rarity;
+        this.id = id;
     }
 
     public double calculateFinalPower(){
@@ -25,5 +26,21 @@ public class MagicEquipment {
                 ", basePower = " + basePower +
                 ", rarity = " + rarity +
                 '}';
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getBasePower() {
+        return basePower;
+    }
+
+    public ItemRarity getRarity() {
+        return rarity;
     }
 }

@@ -3,7 +3,7 @@ package com.github.matheuscslago.topicos.poo.revisao;
 public enum ItemRarity {
     COMMON(1.0, "Lackluster"),
     RARE(1.5, "Blue"),
-    LEGENDARY(2.5, "GOLD");
+    LEGENDARY(2.5, "Gold");
 
     private final double powerMultiplier;
     private final String aura;
