@@ -7,7 +7,7 @@ public class NotifierMain {
 
         System.out.println("---test---");
         emailNotifier.send("Matheus", "ola");
-        smsNotifier.alert("ola");
+        smsNotifier.alert("Matheus", "ola");
 
     }
 }

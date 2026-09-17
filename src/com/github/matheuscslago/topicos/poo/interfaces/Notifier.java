@@ -6,6 +6,7 @@ public interface Notifier {
     void send(String recipient, String message);
 
     default void alert(String recipient, String message){
-        System.out.println(recipient + " [ALERT] " + message);
+        String messageAlert = "[ALERT] " + message;
+        this.send(recipient, messageAlert);
     }
 }
