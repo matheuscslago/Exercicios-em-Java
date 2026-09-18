@@ -1,4 +1,4 @@
-package com.github.matheuscslago.topicos.poo.catalogo;
+package com.github.matheuscslago.topicos.poo.overide;
 
 class Product{
     protected int id;
