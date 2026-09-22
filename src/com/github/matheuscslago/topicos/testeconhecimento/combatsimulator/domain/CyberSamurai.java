@@ -10,16 +10,16 @@ public class CyberSamurai extends Hero implements UltimateAbility{
 
     @Override
     public void performAttack() {
-        System.out.println(this.name + " attacks using Phantom Sword!");
+        System.out.println(this.name + " attacks using Plasm Shooter");
     }
 
     @Override
     public void executeAbility(String target) {
-        System.out.println(this.name + " attacks with Overclock Katana Slash!");
+        System.out.println(this.name + " attacked " + target + " with [Ultimate Ability] Sword Slash!");
     }
 
     public void rebootCyberware(){
-        System.out.println("[CYBER SYSTEM]: Rebooting firmware (....)");
+        System.out.println("[CYBER SYSTEM]: Rebooting cyber firmware from " + this.name + " | Integrity in " + cyberwareIntegrity + "%");
     }
 
     public int getCyberwareIntegrity() {
