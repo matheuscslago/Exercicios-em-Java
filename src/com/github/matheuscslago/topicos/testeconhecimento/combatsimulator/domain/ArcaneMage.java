@@ -18,7 +18,7 @@ public class ArcaneMage extends Hero implements UltimateAbility{
         System.out.println(this.name + " attacked " + target + " with [Ultimate Ability] SuperNova!");
     }
 
-    public int getManaPoints(int manaPoints) {
+    public int getManaPoints() {
         if (manaPoints >= 0) {
             return this.manaPoints;
         } else {

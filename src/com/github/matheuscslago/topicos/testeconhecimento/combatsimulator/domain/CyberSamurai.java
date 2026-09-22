@@ -10,7 +10,7 @@ public class CyberSamurai extends Hero implements UltimateAbility{
 
     @Override
     public void performAttack() {
-        System.out.println(this.name + " attacks using Plasm Shooter");
+        System.out.println(this.name + " attacks using Plasma Shooter");
     }
 
     @Override

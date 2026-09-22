@@ -9,17 +9,17 @@ public class ArenaService {
         hero.performAttack();
         hero.performAttack(weapon);
 
-        if(hero instanceof UltimateAbility){
-            ((UltimateAbility) hero).executeAbility(target);
-            ((UltimateAbility) hero).displayCooldown();
+        if(hero instanceof UltimateAbility ult){
+            ult.executeAbility(target);
+            ult.displayCooldown();
         }else{
-            System.out.println("This player don´t have Ultimate Ability!");
+            System.out.println("This player does not have Ultimate Ability!");
         }
     }
 
     public void runSystemDiagnostic(Hero hero){
-        if(hero instanceof CyberSamurai){
-            ((CyberSamurai) hero).rebootCyberware();
+        if(hero instanceof CyberSamurai cyberSamurai){
+            cyberSamurai.rebootCyberware();
         }
         else{
             System.out.println("No cyber components found in this player!");

@@ -3,7 +3,6 @@ package com.github.matheuscslago.topicos.testeconhecimento.combatsimulator.test;
 import com.github.matheuscslago.topicos.testeconhecimento.combatsimulator.domain.ArcaneMage;
 import com.github.matheuscslago.topicos.testeconhecimento.combatsimulator.domain.CyberSamurai;
 import com.github.matheuscslago.topicos.testeconhecimento.combatsimulator.domain.Hero;
-import com.github.matheuscslago.topicos.testeconhecimento.combatsimulator.domain.UltimateAbility;
 import com.github.matheuscslago.topicos.testeconhecimento.combatsimulator.service.ArenaService;
 
 public class CombatTest {
