@@ -19,7 +19,7 @@ public class ArenaService {
 
     public void runSystemDiagnostic(Hero hero){
         if(hero instanceof CyberSamurai){
-            ((CyberSamurai) hero).displayCooldown();
+            ((CyberSamurai) hero).rebootCyberware();
         }
         else{
             System.out.println("No cyber components found in this player!");
