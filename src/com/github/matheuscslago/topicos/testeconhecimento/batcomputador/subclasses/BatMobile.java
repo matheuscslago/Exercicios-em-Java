@@ -8,14 +8,14 @@ public class BatMobile extends BatGadget implements Maintainable {
     private boolean armorPlatingActive;
 
     public BatMobile(String codename, int durability, int energyLevel, boolean armorPlatingActive) {
-        super("Bat Mobile", durability, energyLevel);
+        super(codename, durability, energyLevel);
         this.armorPlatingActive = armorPlatingActive;
     }
 
     @Override
     public void deploy(String location, ThreatLevel threat) {
         System.out.println("BatMobile was activate in " + location);
-        if(armorPlatingActive){
+        if(armorPlatingActive && threat != null){
             reduceEnergy(20);
             reduceDurability(10 * threat.getDamageFactor());
         }
@@ -25,5 +25,9 @@ public class BatMobile extends BatGadget implements Maintainable {
     public void performMaintenance() {
         rechargeDurability(100);
         System.out.println("Complete armor and engine inspection!");
+    }
+
+    public boolean isArmorPlatingActive() {
+        return armorPlatingActive;
     }
 }
