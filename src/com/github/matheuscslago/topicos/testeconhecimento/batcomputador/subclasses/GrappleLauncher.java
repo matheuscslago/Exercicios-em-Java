@@ -14,7 +14,7 @@ public class GrappleLauncher extends BatGadget implements Maintainable {
 
     @Override
     public void deploy(String location, ThreatLevel threat) {
-        if(threat != null) {
+        if (threat != null) {
             System.out.println("Hook triggered in " + location);
             reduceDurability(5 * threat.getDamageFactor());
             reduceEnergy(10);

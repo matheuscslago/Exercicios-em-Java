@@ -14,8 +14,8 @@ public class BatMobile extends BatGadget implements Maintainable {
 
     @Override
     public void deploy(String location, ThreatLevel threat) {
-        System.out.println("BatMobile was activate in " + location);
-        if(armorPlatingActive && threat != null){
+        System.out.println("BatMobile was activated in " + location);
+        if (armorPlatingActive && threat != null) {
             reduceEnergy(20);
             reduceDurability(10 * threat.getDamageFactor());
         }

@@ -11,38 +11,34 @@ public abstract class BatGadget {
         this.energyLevel = energyLevel;
     }
 
-    public void rechargeEnergy(int amount){
-        if(energyLevel + amount <= 100){
+    public void rechargeEnergy(int amount) {
+        if (energyLevel + amount <= 100) {
             energyLevel += amount;
-        }
-        else{
+        } else {
             energyLevel = 100;
         }
     }
 
-    public void reduceEnergy(int amount){
-        if(energyLevel - amount >= 0){
+    public void reduceEnergy(int amount) {
+        if (energyLevel - amount >= 0) {
             energyLevel -= amount;
-        }
-        else{
+        } else {
             energyLevel = 0;
         }
     }
 
-    public void rechargeDurability(int amount){
-        if(durability + amount <= 100){
+    public void rechargeDurability(int amount) {
+        if (durability + amount <= 100) {
             durability += amount;
-        }
-        else{
+        } else {
             durability = 100;
         }
     }
 
-    public void reduceDurability(int amount){
-        if(durability - amount >= 0){
+    public void reduceDurability(int amount) {
+        if (durability - amount >= 0) {
             durability -= amount;
-        }
-        else{
+        } else {
             durability = 0;
         }
     }
