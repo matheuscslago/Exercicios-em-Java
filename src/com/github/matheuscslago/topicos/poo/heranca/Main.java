@@ -2,16 +2,12 @@ package com.github.matheuscslago.topicos.poo.heranca;
 
 public class Main {
     static void main(String[] args) {
-        Funcionario f1 = new Funcionario("Carlos", 3000.00);
-        Gerente g1 = new Gerente("Sara", 8000.00, 2000.00);
-        Desenvolvedor d1 = new Desenvolvedor("Matheus", 5000.00, 4);
+        Agricola regiaoA = new Agricola("Pelenor", "Lorde Erchirion", 5000.0, 120);
+        Portuaria regiaoP = new Portuaria("Pelargir", "Lorde Angbor", 8000.0, 10);
 
-        System.out.println("=== Summary ===");
-        f1.showSummary();
-        System.out.println("--------");
-        g1.showSummary();
-        System.out.println("--------");
-        d1.showSummary();
-
+        System.out.println("=== Relatório ===");
+        System.out.println(regiaoA);
+        System.out.println("=======");
+        System.out.println(regiaoP);
     }
 }
