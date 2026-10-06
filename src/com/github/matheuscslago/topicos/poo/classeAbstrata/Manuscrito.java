@@ -1,11 +1,11 @@
 package com.github.matheuscslago.topicos.poo.classeAbstrata;
 
-public abstract class Manuscritos {
+public abstract class Manuscrito {
     private final String titulo;
     private final int raridade;
     private double conservacao;
 
-    public Manuscritos(String titulo, int raridade, double conservacao) {
+    public Manuscrito(String titulo, int raridade, double conservacao) {
         this.titulo = titulo;
         this.raridade = raridade;
         this.conservacao = conservacao;

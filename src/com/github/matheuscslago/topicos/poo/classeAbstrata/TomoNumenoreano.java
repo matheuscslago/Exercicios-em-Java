@@ -1,8 +1,8 @@
 package com.github.matheuscslago.topicos.poo.classeAbstrata;
 
-public class TomosNumenoreano extends Manuscrito {
+public class TomoNumenoreano extends Manuscrito {
 
-    public TomosNumenoreano(String titulo, int raridade, double conservacao) {
+    public TomoNumenoreano(String titulo, int raridade, double conservacao) {
         super(titulo, raridade, conservacao);
     }
 
