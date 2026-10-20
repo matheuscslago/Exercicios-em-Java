@@ -13,7 +13,7 @@ public class ContaEspacial {
         } else {
             throw new ContaInvalidaException("id de conta inválido");
         }
-        if (saldoCreditos < 0.0) {
+        if (saldoCreditos >= 0.0) {
             this.saldoCreditos = saldoCreditos;
         } else {
             throw new IllegalArgumentException("Saldo inicial não pode ser negativo");
