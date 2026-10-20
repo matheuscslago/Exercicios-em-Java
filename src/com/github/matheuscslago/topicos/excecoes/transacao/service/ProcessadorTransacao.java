@@ -11,7 +11,7 @@ public class ProcessadorTransacao {
     public void transferir(ContaEspacial origem, ContaEspacial destino, double valor){
         if(origem == null || destino == null){
             throw new ContaInvalidaException("[Contas inválidas] As contas de origem e destino não podem ser nulas.");
-        }else if(origem.getIdConta() == destino.getIdConta()){
+        }else if(origem.getIdConta().equals(destino.getIdConta())){
             throw new ContaInvalidaException("[Contas iguais] Não é possível realizar transferência para a mesma conta.");
         }
 
@@ -19,8 +19,8 @@ public class ProcessadorTransacao {
         if(origem.getSaldoCreditos() < valorTotal){
             throw new SaldoInsuficienteException("[Créditos inválidos]: Saldo atual: " + origem.getSaldoCreditos() + " | Valor a ser debitado: " + valorTotal);
         }else{
-            origem.setSaldoCreditos(-1 * valorTotal);
-            destino.setSaldoCreditos(valor);
+            origem.setSaldoCreditos(origem.getSaldoCreditos() - valorTotal);
+            destino.setSaldoCreditos(destino.getSaldoCreditos() + valor);
             System.out.println("Transferência concluída!");
         }
     }

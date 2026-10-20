@@ -8,7 +8,7 @@ public class ContaEspacial {
     private double saldoCreditos;
 
     public ContaEspacial(String idConta, String nomePiloto, double saldoCreditos) {
-        if (idConta != null && idConta != " ") {
+        if (idConta != null && !idConta.isEmpty()) {
             this.idConta = idConta;
         } else {
             throw new ContaInvalidaException("id de conta inválido");
@@ -34,6 +34,6 @@ public class ContaEspacial {
     }
 
     public void setSaldoCreditos(double saldoCreditos) {
-        this.saldoCreditos += saldoCreditos;
+        this.saldoCreditos = saldoCreditos;
     }
 }
