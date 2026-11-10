@@ -1,4 +1,4 @@
-package com.github.matheuscslago.topicos.poo.revisao;
+package com.github.matheuscslago.topicos.poo.revisao.forge;
 
 public enum ItemRarity {
     COMMON(1.0, "Lackluster"),

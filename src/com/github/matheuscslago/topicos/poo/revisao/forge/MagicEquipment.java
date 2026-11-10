@@ -1,4 +1,4 @@
-package com.github.matheuscslago.topicos.poo.revisao;
+package com.github.matheuscslago.topicos.poo.revisao.forge;
 
 public class MagicEquipment {
     protected final String id;

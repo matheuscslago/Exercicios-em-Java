@@ -1,4 +1,4 @@
-package com.github.matheuscslago.topicos.poo.revisao;
+package com.github.matheuscslago.topicos.poo.revisao.forge;
 
 public class ForgeMain {
     static void main(String[] args) {
