@@ -29,6 +29,14 @@ public class Cliente {
         return documento.equals(cliente.documento);
     }
 
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "nome='" + nome + '\'' +
+                ", documento='" + documento + '\'' +
+                '}';
+    }
+
     public String getNome() {
         return nome;
     }
