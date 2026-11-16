@@ -1,6 +1,6 @@
 package com.github.matheuscslago.topicos.collections.list;
 
-public class Cliente {
+public class Cliente implements Comparable<Cliente>{
     private final String nome;
     private final String documento;
 
@@ -18,6 +18,11 @@ public class Cliente {
     @Override
     public int hashCode() {
         return documento.hashCode();
+    }
+
+    @Override
+    public int compareTo(Cliente outro) {
+        return this.documento.compareTo(outro.getDocumento());
     }
 
     @Override
