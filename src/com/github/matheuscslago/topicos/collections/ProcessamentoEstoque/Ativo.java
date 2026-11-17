@@ -34,6 +34,14 @@ public class Ativo implements Comparable<Ativo> {
         return getId().compareTo(o.getId());
     }
 
+    @Override
+    public String toString() {
+        return "Ativo{" +
+                "id = " + id +
+                " | nome = " + nome +
+                '}';
+    }
+
     public String getId() {
         return id;
     }
