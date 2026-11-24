@@ -1,4 +1,4 @@
-package com.github.matheuscslago.topicos.collections.ControleEntrega.domain;
+package com.github.matheuscslago.topicos.collections.ControleEntrega;
 
 import java.util.Objects;
 
