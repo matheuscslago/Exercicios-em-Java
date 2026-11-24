@@ -9,11 +9,11 @@ public class Encomenda implements Comparable<Encomenda>{
     private final double pesoKg;
 
     public Encomenda(String codigo, String destino, int prazoDias, double pesoKg) {
-        if (codigo == null || codigo.isEmpty()) {
+        if (codigo == null || codigo.trim().isEmpty()) {
             throw new IllegalArgumentException("Código inválido!");
         }
         if (destino == null || destino.isEmpty()) {
-            throw new IllegalArgumentException("Código inválido!");
+            throw new IllegalArgumentException("Destino inexistente!");
         }
         if (prazoDias < 0) {
             throw new IllegalArgumentException("Prazo não deve ser negativo!");
@@ -41,6 +41,7 @@ public class Encomenda implements Comparable<Encomenda>{
 
     @Override
     public int compareTo(Encomenda o) {
+        Objects.requireNonNull(o);
         return codigo.compareTo(o.codigo);
     }
 
